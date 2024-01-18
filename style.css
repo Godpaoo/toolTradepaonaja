@@ -1,0 +1,454 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+ i{
+  font-family: "kanit",sans-serif;
+ }
+  
+  /* Style the label for better presentation */
+  .styled-input label {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-size: 18px;
+    margin-right: 20px;
+    align-items: center;
+  }
+  
+  /* Style the input */
+  .styled-input input {
+    padding: 5px;
+    width: 25%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px;
+    margin-right: px;
+  }
+
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; /* ทำให้ nav มีความสูงเต็มหน้าจอ */
+    background-color: var(--black);
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  nav h3{
+    color: white;
+    font-weight: 500;
+  }
+  
+  nav img {
+    max-width: 100%; /* ตรงกลางทั้งแกน X */
+    max-height: 100%; /* ตรงกลางทั้งแกน Y */
+  }
+  
+  /* Add focus styles for better user experience */
+  .styled-input input:focus {
+    border-color: var(--GTP); /* Change to your desired focus color */
+    box-shadow: 0 0 5px rgb(122,196,173,0.5);
+  }
+
+  button.calcu {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: regular;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(120, 185, 165); /* Green color */
+    transition: background-color 0.3s;
+  }
+  
+  button.calcu:hover {
+    background-color: rgb(77, 138, 119); /* Darker green color on hover */
+  }
+
+  button.clear {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: regular;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(98, 98, 98); /* Green color */
+    transition: background-color 0.3s;
+  }
+  
+  button.clear:hover {
+    background-color: rgba(39, 39, 39, 0.9) ; /* Darker green color on hover */
+  }
+
+
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'kanit',sans-serif;
+  }
+  body{
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* import Handson */
+
+  .imData{
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input{
+    padding: 10px;
+  }
+  
+  .imData .handson{
+    padding: 10px 10px 0 0;
+  }
+
+  .handson .handTable{
+    margin-bottom: 10px;
+    width: 900px;
+  }
+
+  /* End import Handson */
+
+  /* S Handson making */
+
+  #handsontable-container {
+    background-color: var(--GTP);
+    
+  }
+
+  #handsontable-container th,td{
+    
+    font-size: 15px; 
+  }
+
+  th.col-special {
+    background-color: rgb(122,196,173,0.9); /* เปลี่ยนสีพื้นหลังตามที่คุณต้องการ */
+  }
+
+  /* .ht_clone_top thead th {
+    background-color: var(--GTP);
+    color: white;
+  } */
+
+  /* #handsontable-container td {
+    background-color: lightblue;
+  } */
+
+
+  /* End Handson making */
+  
+  /* Start Result */
+
+  .result-container{
+      margin-top: 20px;
+      background-color: #f3f3f3;
+      padding: 20px;
+      border-radius: 8px;
+      
+    
+  }
+
+  #result-container {
+    margin-top: 20px; /* ระยะห่างด้านบน */
+    /* ปรับส่วนอื่น ๆ ของ #result-container ตามต้องการ */
+  }
+
+  :root{
+    --black:#282827;
+    --GTP:#7ac4ad;
+  }
+
+  /* Result */
+
+#result {
+    margin-top: 20px;
+    background: #f3f3f3;
+}
+
+.result01{
+  display: flex; /* ใช้ Flexbox */
+  justify-content: space-between;
+  /* background-color: #9a9a9a; */
+  align-items: center;
+}
+
+.alltrade{
+  /* background-color: #ffffff; */
+  padding: 15px;
+  background: #ffffff;
+  width: max-content;
+  text-align: center;
+  /* border:4px solid #7ac4ad; */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* ... ส่วน CSS ที่มีอยู่ ... */
+
+.winlossbox {
+  margin-left:50px;
+  margin-right:50px;
+  display: flex; /* ใช้ Flexbox */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.winlossbox h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p{
+  font-size: 17px;
+}
+
+.boxWining,
+.boxLossing {
+  background-color: #ffffff;
+  width: 300px;
+  margin: 20px;
+  padding: 20px; /* เพิ่ม padding เพื่อปรับลักษณะทางกราฟิก */
+  border-radius: 8px; /* เพิ่ม border-radius เพื่อทำมุมโค้ง */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เพิ่ม box-shadow เพื่อเพิ่มลูกศร */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ทำให้ .winningIMG ตรงกลางแกน X */
+  justify-content: center; /* ทำให้ .winningIMG ตรงกลางแกน Y */
+}
+
+.boxWining p,
+.boxLossing p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px; /* จัดข้อความไปทางขวา */
+  display: flex;
+}
+
+.spaceP h3{
+  text-align: center;
+  margin-bottom:10px;
+}
+
+.boxWining h3{
+  color: #7ac4ad;
+}
+
+.boxLossing h3{
+  color: #ff3f59;
+}
+
+.boxWining {
+  text-align: center;
+}
+
+.winningIMG{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  /* background-color: #282827; */
+  
+  align-items: center; /* ทำให้รูปภาพตรงกลางแกน X */
+  justify-content: center; /* ทำให้รูปภาพตรงกลางแกน Y */
+}
+
+.afSpace{
+  width: 100%;
+  padding: 5px;
+}
+
+.winningIMG img{
+  margin-bottom: 0px;
+  height: 90px;
+  margin: auto;
+  
+}
+
+.boxWining span,
+.boxLossing span {
+  font-weight: bold;
+  text-align: right;/* จัดข้อความไปทางขวา */
+}
+
+.boxWining .spaceP{
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: var(--GTP) 2px solid;
+}
+
+
+.boxLossing .spaceP{
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: #ff3f59 2px solid;
+}
+
+.boxWining .spaceP p,
+.boxLossing .spaceP p{
+  margin-bottom: 9px;
+}
+
+
+/* sumTotal */
+
+ .winAloss {
+  background-color: #ffffff8b;
+  padding: 17px; /* ระยะห่างของข้อความภายใน */
+  border-bottom: 3px solid var(--GTP); 
+  border-radius: 8px; /* มุมโค้ง */ /* กึ่งกลางข้อความใน div */
+  width: 220px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-right: 70px;
+}
+
+.winAloss p{
+  display: flex;
+  justify-content: space-between;
+}
+
+.winAloss span{
+  font-weight: bold;
+  float: right;
+}
+
+ .sumTotal {
+  background-color: #ffffff;
+  padding: 20px; /* ระยะห่างของข้อความภายใน */
+  border: 3px solid var(--GTP); /* เส้นขอบ */
+  border-radius: 8px; /* มุมโค้ง */
+  text-align: center; /* กึ่งกลางข้อความใน div */
+  max-width: 560px; /* ขนาดสูงสุดของ div */
+  margin: 0 auto; /* กึ่งกลาง div ในกรณีที่ max-width มีการใช้งาน */
+  margin-bottom: 50px;
+}
+
+.sumTotal span{
+  font-weight: bold;
+}
+
+#myChart{
+  margin-top: 50px;
+  background-color: #ffffff8b;
+  padding: 17px; /* ระยะห่างของข้อความภายใน */
+  border-bottom: 3px solid var(--GTP); 
+  border-radius: 8px; /* มุมโค้ง */ /* กึ่งกลางข้อความใน div */
+  width: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: none;
+}
+
+
+.copyRight{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.tradepaoFeed {
+  display: flex;
+  overflow: hidden;
+  width: 650px;
+  justify-content: center;
+  
+}
+
+/* .ImgTPfeed{
+  background-color: #282827;
+} */
+
+.ImgTPfeed img{
+  height: 220px;
+  float: left;
+  margin-right: 10px;
+
+}
+
+.textpaofeed {
+  overflow: hidden; 
+  box-shadow: 0 0 10px rgb(128, 199, 177); 
+  border-radius: 8px; 
+  padding: 15px; 
+  background-color:#73bba9;
+  width: max-content;
+  height: max-content;
+  text-align: center;
+  /* border: 3px solid var(--GTP); */
+}
+
+.textpaofeed h3 {
+  margin: 0 auto; 
+  color: #f3f3f3; 
+  font-weight: 300;
+  font-size: 20px
+}
+
+#monthlyProfits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* background-color: #282827; */
+  padding-top: 50px;
+  /* padding-bottom: 50px; */
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: center;
+  
+}
+
+.monthContainer {
+  border-bottom: 2px solid #7ac4ad;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.monthContainer p {
+  margin: 0;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 250px;
+  height: 100%;
+  text-align: center;
+}
+
+.monthContainer span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.monthContainer span:last-child {
+  margin-right: 0;
+}
