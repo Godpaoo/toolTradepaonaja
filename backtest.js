@@ -299,10 +299,10 @@ document.addEventListener("DOMContentLoaded", function () {
           const startOfMonth = currentAmount;
       
           if (entry.profitLoss >= 0) {
-            monthParagraph.textContent = `เดือน: ${entry.month}, กำไร: ${entry.profitLoss}`;
+            monthParagraph.textContent = `เดือน: ${entry.month}, กำไร: ${entry.profitLoss.toFixed(2)}`;
             currentAmount += entry.profitLoss;
           } else {
-            monthParagraph.textContent = `เดือน: ${entry.month}, ขาดทุน: ${entry.profitLoss}`;
+            monthParagraph.textContent = `เดือน: ${entry.month}, ขาดทุน: ${entry.profitLoss.toFixed(2)}`;
             currentAmount += entry.profitLoss;
       
             // ในเดือนที่ขาดทุน
