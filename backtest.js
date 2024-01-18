@@ -407,7 +407,7 @@ document.addEventListener("DOMContentLoaded", function () {
             width: 1.5,
           },
           title: {
-            text: "กราฟแสดงการเปลี่ยนแปลงของกำมาฟักกิ้งไรและขาดทุน",
+            text: "กราฟแสดงการเปลี่ยนแปลงของกำไรและขาดทุน",
             align: "left",
             style: {
               fontSize: "24px", // ปรับขนาดตัวอักษร
