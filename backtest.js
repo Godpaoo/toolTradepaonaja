@@ -925,7 +925,7 @@ document.addEventListener("DOMContentLoaded", function () {
       textFeed.querySelector("h3").textContent = "";
       textFeed.querySelector("h3").textContent =
         "ดีใจด้วยนะครับพอร์ตของคุณได้กำไรในการ Test แต่ก็อย่าลืมเรื่อง Drawdown กับ Risk:Reward ด้วยล่ะ";
-    } else if ((SumRe = StartB)) {
+    } else if (SumRe == StartB) {
       textFeed.querySelector("h3").textContent = "";
       textFeed.querySelector("h3").textContent =
         "ถึงแม้ว่าพอร์ตของคุณจะไม่กำไรแต่อย่างน้อยคุณก็ไม่ขาดทุน ลองใหม่อีกครั้งดูนะครับลุยยย!";
