@@ -16,92 +16,108 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+
+
+
 <body>
 
   <nav><img src="img/LogoTP.png" alt="" srcset=""> </nav>
 
 
-
-  <div class="imData">
-    <div class="input">
-      <div class="styled-input">
-
-        
-
-
-
-        <label for="numberInput"> <i class="fas fa-file-signature"> </i>
-          <input title="เงินเริ่มต้น" placeholder="Balance" class="styled-input" type="number" id="numberInput"
-            required>
-        </label>
-
-
-        <label for="DDInput"> <i class="fas fa-sort-amount-down"></i>
-          <input title="% Drawdown ที่ต้องการนับจากเงินเริ่มต้น" placeholder="Drawdown %" class="styled-input"
-            type="number" id="DDInput" required>
-        </label>
-
-        <label for="TPInput"> <i class="fas fa-sort-amount-up"></i>
-          <input title="% กำไรที่คาดหวังนับจากเงินเริ่มต้น" placeholder="Profit Target %" class="styled-input"
-            type="number" id="TPInput" required>
-        </label>
-
-      </div>
-
-      <div class="handson">
-        <div class="handTable" id="handsontable-container"></div>
-        <button class="calcu" id="calculateButton"><i class="fas fa-cogs "></i> คำนวณโลด</button>
-        <button class="clear" id="clearButton"><i class="fas fa-trash-alt"></i> เคลียไม่ลงก็คงต้องเลีย</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="chartNa" id="chartNa">
-
-
-    <div id="myChart">
-
-    </div>
-
-
-  </div>
-
-
-  <div id="monthlyProfits"></div>
-
-
-  <div id="result-container" class="result-container">
-
-    <div id="result">
-      <!-- ข้อมูล Result จะแสดงที่นี่ -->
-
-    </div>
-
-
-  </div>
-
-
-  <div class="tradepaoFeed">
-    <div class="ImgTPfeed">
-      <img src="img/GodpaoWest.png" alt="">
-    </div>
-
-    <div class="textpaofeed" id="textFeedp">
-      <h3>ขอให้ทุกคนสนุกกับการ Test นะค้าบบ
-      </h3>
-    </div>
-  </div>
-
+  
 
   <center>
-    <div class="copyRight">
-      <p>Presented by TradePao copyright @2024</p>
+    <div id="desktopMessage">
+      <h1>เข้าใช้งานผ่านคอมพิวเตอร์เท่านั้นนะค้าบบ</h1>
     </div>
   </center>
+  
+
+
+    <div class="imData">
+      <div class="input">
+        <div class="styled-input">
+
+
+
+
+
+          <label for="numberInput"> <i class="fas fa-file-signature"> </i>
+            <input title="เงินเริ่มต้น" placeholder="Balance" class="styled-input" type="number" id="numberInput"
+              required>
+          </label>
+
+
+          <label for="DDInput"> <i class="fas fa-sort-amount-down"></i>
+            <input title="% Drawdown ที่ต้องการนับจากเงินเริ่มต้น" placeholder="Drawdown %" class="styled-input"
+              type="number" id="DDInput" required>
+          </label>
+
+          <label for="TPInput"> <i class="fas fa-sort-amount-up"></i>
+            <input title="% กำไรที่คาดหวังนับจากเงินเริ่มต้น" placeholder="Profit Target %" class="styled-input"
+              type="number" id="TPInput" required>
+          </label>
+
+        </div>
+
+        <div class="handson">
+          <div class="handTable" id="handsontable-container"></div>
+          <button class="calcu" id="calculateButton"><i class="fas fa-cogs "></i> คำนวณโลด</button>
+          <button class="clear" id="clearButton"><i class="fas fa-trash-alt"></i> เคลียไม่ลงก็คงต้องเลีย</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="chartNa" id="chartNa">
+
+
+      <div id="myChart">
+
+      </div>
+
+
+    </div>
+
+
+    <div id="monthlyProfits"></div>
+
+
+    <div id="result-container" class="result-container">
+
+      <div id="result">
+        <!-- ข้อมูล Result จะแสดงที่นี่ -->
+
+      </div>
+
+
+    </div>
+
+
+    <div class="tradepaoFeed">
+      <div class="ImgTPfeed">
+        <img src="img/GodpaoWest.png" alt="">
+      </div>
+
+      <div class="textpaofeed" id="textFeedp">
+        <h3>ขอให้ทุกคนสนุกกับการ Test นะค้าบบ
+        </h3>
+      </div>
+    </div>
+
+
+    <center>
+      <div class="copyRight">
+        <p>Presented by TradePao copyright @2024</p>
+      </div>
+    </center>
+
+
+  
 
 
 
   <script src="backtest.js"></script>
+
 </body>
 
 </html>

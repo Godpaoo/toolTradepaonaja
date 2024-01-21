@@ -1,3 +1,27 @@
+
+
+
+// function checkScreenSize() {
+//   // ตรวจสอบขนาดหน้าจอ
+//   if (window.innerWidth <= 768) { // หากความกว้างมากกว่าหรือเท่ากับ 768px (จำลองความกว้างของแท็บเล็ต)
+//     // แสดงข้อความสำหรับคอมพิวเตอร์
+//     document.getElementById("desktopMessage").style.display = "block";
+//     document.getElementById("desktopMessage").style.display = "block";
+//   }
+// }
+
+
+// // เรียกฟังก์ชันตรวจสอบขนาดหน้าจอทันทีเมื่อหน้าจอโหลด
+// window.onload = checkScreenSize;
+
+// // เรียกฟังก์ชันตรวจสอบขนาดหน้าจอทุกครั้งที่มีการปรับขนาดหน้าจอ
+// window.onresize = checkScreenSize;
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   var hot = new Handsontable(
     document.getElementById("handsontable-container"),
@@ -1036,3 +1060,5 @@ document.addEventListener("DOMContentLoaded", function () {
     textFeed.querySelector("h3").textContent = "ลองดูอีกครั้งนะค้าบพี่ชายย ลุยย";
   });
 });
+
+

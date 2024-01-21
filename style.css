@@ -1,6 +1,9 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
 
+
+  
+
  i{
   font-family: "kanit",sans-serif;
  }
@@ -451,4 +454,25 @@ p{
 
 .monthContainer span:last-child {
   margin-right: 0;
+}
+
+
+/* --------------------------------------------- */
+
+#desktopMessage {
+  display: none;
+}
+
+
+
+ 
+
+
+@media screen and (max-width: 767px) {
+  .imData,.chartNa,.monthlyProfits,.result-container,.tradepaoFeed{
+    visibility: hidden;
+  }
+  #desktopMessage{
+    display: block;
+  }
 }
